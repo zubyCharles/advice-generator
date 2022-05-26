@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --light-grey: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --dark-grey: hsl(217, 19%, 38%);
+    --darker-grey: hsl(217, 19%, 24%);
+}
+
+* {
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--darker-grey);
+}
+
+.message-body {
+    width: 75%;
+    margin: 0 auto;
+    background: var(--dark-grey);
+    transform: translateY(5rem);
+    border-radius: 0.85rem;
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+.small {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+small {
+    color: var(--neon-green);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--light-grey)
+}
+
+.divider {
+    width: fit-content;
+    margin: 2rem 0 0 0;
+}
+
+.svg-divider {
+    filter: brightness(0) invert(0.8);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button-container {
+    width: fit-content;
+    margin: 0 auto;
+    transform: translateY(3.5rem);
+}
+
+button {
+    outline: none;
+    background: var(--neon-green);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.dice {
+    width: 50%;
+}
+
+
+@media (min-width: 780px) {
+    .divider {
+        width: 60%;
+        margin: 2rem auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .message-body {
+        width: 35%;
+        transform: translateY(10rem);
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    .divider {
+        width: 60%;
+        margin: 2rem auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .svg-divider {
+        width: 150%;
+        margin: 0 auto;
+        filter: brightness(0) invert(0.6);
+    }
+
+    button {
+        transition: all 100ms ease-in-out 10ms;
+    }
+
+    button:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 10px var(--neon-green);
+    }
+}
