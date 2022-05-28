@@ -10,7 +10,7 @@ function getMessage() {
       return res.slip;
     })
     .then((slip) => {
-      message.textContent = slip.advice;
+      message.textContent = `"${slip.advice}"`;
       messageID.textContent = `ADVICE  #${slip.id}`;
     })
     .finally(() => {

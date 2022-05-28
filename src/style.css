@@ -56,14 +56,14 @@ p {
 .button-container {
     width: fit-content;
     margin: 0 auto;
-    transform: translateY(3.5rem);
+    transform: translateY(3.2rem);
 }
 
 button {
     outline: none;
     background: var(--neon-green);
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: none;
 }
